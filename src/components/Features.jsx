@@ -28,7 +28,7 @@ const Features = () => {
 
   return (
     <section className="py-20 bg-white text-center">
-      <h4 className="md:text-lg text-sm text-blue-500 font-semibold uppercase mb-2">
+      <h4 className="md:text-lg text-sm text-blue-500 font-bold uppercase mb-2">
         Our Features
       </h4>
       <h2 className="md:text-6xl text-xl font-bold text-gray-900 mb-9 md:mb-16">
@@ -38,7 +38,7 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-gray-100 rounded-3xl md:w-full w-11/12  mx-auto p-8 shadow-sm hover:shadow-lg transition duration-300"
+            className="bg-gray-100 rounded-3xl md:w-full w-11/12  mx-auto p-8  shadow-md cursor-pointer transition duration-300"
           >
             <div className="flex justify-center mb-6">
               <img

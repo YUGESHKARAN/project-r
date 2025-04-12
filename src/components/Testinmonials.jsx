@@ -36,12 +36,12 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-white text-center">
-      <h4 className="text-sm text-blue-500 font-semibold uppercase mb-2">
+    <section className="pb-20 bg-white text-center">
+      <h4 className="md:text-lg text-sm text-blue-500 font-bold uppercase mb-2">
         Our Customers Love Our Product
       </h4>
-      <h2 className="text-4xl font-bold text-gray-900 mb-4">Testimonials</h2>
-      <p className="text-gray-500 max-w-2xl mx-auto mb-12">
+      <h2 className="md:text-5xl text-xl  font-bold text-gray-900 mb-9 md:mb-10">Testimonials</h2>
+      <p className="text-gray-500 max-w-2xl mx-auto text-wrap md:w-full w-11/12 md:text-base text-sm mb-12">
         Don't just take our word for it, read from our extensive list of case
         studies and customer testimonials.
       </p>
@@ -52,12 +52,12 @@ const Testimonials = () => {
             key={index}
             className="bg-blue-50 p-6 rounded-xl flex items-start gap-4 shadow-sm"
           >
-            <div className="text-blue-500 text-2xl">“</div>
+            <div className="text-blue-500 text-4xl font-bold">“</div>
             <div className="flex-1 text-left">
-              <p className="text-gray-700 mb-2">{t.quote}</p>
-              <p className="font-semibold text-gray-800">
+              <p className="text-gray-600 lg:text-base md:text-sm text-xs mb-2">{t.quote}</p>
+              <p className="font-bold lg:text-base md:text-sm text-xs text-gray-800">
                 {t.name}{" "}
-                <span className="text-gray-400 font-normal">- {t.role}</span>
+                <span className="text-gray-500 lg:text-base md:text-sm text-xs font-semibold">- {t.role}</span>
               </p>
             </div>
             <img

@@ -39,7 +39,7 @@ const Pricing = () => {
 
   return (
     <section className="py-20 bg-white text-center">
-      <h4 className="text-sm text-blue-500 font-semibold uppercase mb-2">
+      <h4 className="md:text-lg text-sm text-blue-500 font-bold uppercase mb-2">
         Our Pricing
       </h4>
       <h2 className="md:text-5xl text-xl  font-bold text-gray-900 mb-9 md:mb-16">
@@ -52,7 +52,7 @@ const Pricing = () => {
             // className={`relative rounded-2xl border border-gray-200 shadow-sm p-8 transition duration-300 ${
             //   plan.highlight ? "bg-white shadow-lg scale-105 z-10" : "bg-white"
             // }`}
-            className={`relative rounded-2xl border border-gray-200 shadow-sm p-8 transition duration-300 bg-white shadow-lg scale-105 z-10 
+            className={`relative md:w-full w-11/12 mx-auto cursor-pointer rounded-2xl border border-gray-200 shadow-sm p-8 transition duration-300 bg-blue-50 shadow-lg scale-100 hover:scale-105 z-10 
               `}
           >
             {/* {plan.highlight && (
@@ -63,17 +63,17 @@ const Pricing = () => {
             <h3 className="text-sm font-bold uppercase text-gray-800 mb-1">
               {plan.name} Plan
             </h3>
-            <div className="text-4xl font-bold text-gray-900 mb-4">
+            <div className="md:text-4xl text-2xl font-bold text-gray-900 mb-4">
               {plan.price}
             </div>
-            <p className="text-sm text-gray-500 mb-6">
+            <p className="md:text-sm text-xs text-gray-500 mb-6">
               {plan.highlight
                 ? `Our most popular package is the Pro Plan which gives you access to the following:`
                 : `With our ${plan.name.toLowerCase()} plan you can take advantage of the following features:`}
             </p>
-            <ul className="text-left space-y-3 mb-6">
+            <ul className="text-left md:space-y-3 space-y-2  mb-4 md:mb-6">
               {plan.features.map((feature, i) => (
-                <li key={i} className="flex items-center">
+                <li key={i} className="flex md:text-base text-sm items-center">
                   <svg
                     className="w-5 h-5 text-green-500 mr-2"
                     fill="none"
@@ -92,7 +92,7 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <button className="w-full bg-gray-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800">
+            <button className="w-full bg-gray-900 text-white md:py-3 md:px-6 px-4 py-2 md:text-base text-sm rounded-lg font-semibold hover:bg-gray-800">
               {plan.button}
             </button>
           </div>

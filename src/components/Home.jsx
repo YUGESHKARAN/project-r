@@ -43,7 +43,7 @@ function Home() {
             />
             <div className="absolute inset-0 bg-indigo-800 bg-opacity-50 flex items-center justify-center">
               <div className="text-white text-3xl font-bold flex items-center gap-2">
-                <span className="text-4xl">⛰️</span> Landmark
+                <span className="text-4xl">⛰️</span> Project-R
               </div>
             </div>
           </div>
